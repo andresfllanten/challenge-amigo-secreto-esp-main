@@ -11,7 +11,7 @@ function agregarAmigo() {
   if (nombreAmigo != '') {
     //Actualizacion array de amigos
     amigos.push(nombreAmigo);
-    console.log(amigos);
+    
     //La funcion limpiarCaja limpia el campo de entrada
     limpiarCaja();
 
@@ -19,6 +19,13 @@ function agregarAmigo() {
     alert("Por favor, inserte un nombre.");
   }
 }
+
+function mostrarAmigos(){
+    //Obtencion del elemento de la lista
+    let lista = document.querySelector('#listaAmigos').value;
+    console.log(lista);
+}
+
 
 function limpiarCaja() {
     //Limpia el campo de entrada y le da un valor de vacio
