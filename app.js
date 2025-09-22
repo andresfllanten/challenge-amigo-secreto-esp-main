@@ -41,6 +41,16 @@ function mostrarAmigos(){
 
 }
 
+function sortearAmigo() {
+    
+    let resultado = document.getElementById('resultado');
+
+    //Validar amigos disponibles 
+    if (amigos.length === 0) {
+        resultado.innerHTML= 'No hay lista de amigos, Introduzca nombres por favor.'
+        return ;
+    } 
+}
 
 function limpiarCaja() {
     //Limpia el campo de entrada y le da un valor de vacio
