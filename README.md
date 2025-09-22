@@ -15,3 +15,7 @@ Estamos trabajando para mejorar la experiencia de usuario y agregar nuevas carac
 * **Sorteo aleatorio:** Cuando todos los nombres estén en la lista, haz clic en el botón **Sortear Amigo** para que la aplicación elija un nombre al azar y lo muestre en pantalla.
 
 ---
+## Funcionalidades finalizadas 
+
+* **Agregar nombres:** Introduce los nombres de los participantes en el campo de texto y haz clic en el botón **Adicionar** para agregarlos a la lista. 
+* **Validación de entrada:** La aplicación te avisará si intentas agregar un nombre con el campo de texto vacío.
