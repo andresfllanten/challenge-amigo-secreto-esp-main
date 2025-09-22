@@ -14,6 +14,7 @@ function agregarAmigo() {
 
     //La funcion limpiarCaja limpia el campo de entrada
     limpiarCaja();
+    mostrarAmigos();
 
   } else {
     alert("Por favor, inserte un nombre.");
@@ -22,10 +23,22 @@ function agregarAmigo() {
 
 function mostrarAmigos(){
     //Obtencion del elemento de la lista
-    let lista = document.querySelector('#listaAmigos').value;
+    let lista = document.querySelector('#listaAmigos');
     //Limpieza lista existente
     lista.innerHTML = "";
-    
+
+    //Iteracion sobre el arreglo amigos
+    for (let index = 0; index < amigos.length; index++) {
+        //Creacion nuevo elemento <li>
+        const nuevoElemento = document.createElement('li');
+
+        //Asignar nombres del array amigos al contenido <li>
+        nuevoElemento.textContent = amigos[index];
+
+        //Agregar el nuevo elemento <li> a la lista padre
+        lista.appendChild(nuevoElemento);
+    }
+
 }
 
 
