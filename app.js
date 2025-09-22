@@ -50,6 +50,8 @@ function sortearAmigo() {
         resultado.innerHTML= 'No hay lista de amigos, Introduzca nombres por favor.'
         return ;
     } 
+    //Generar el indice aleatorio
+    let indiceAleatorio = Math.floor(Math.random() * amigos.length);
 }
 
 function limpiarCaja() {
